@@ -2,4 +2,4 @@
 res = ""
 for alaphabet in range(97, 123):
     res = chr(alaphabet)
-    print(res, end='')
+    print("{}".format(res), end='')
