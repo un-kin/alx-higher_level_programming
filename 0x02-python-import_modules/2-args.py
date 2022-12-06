@@ -8,7 +8,7 @@ if __name__ == "__main__":
     elif args == 1:
         print("{} argument:".format(args))
     else:
-        print("{} argument:".format(args))
+        print("{} arguments:".format(args))
 
     if args >= 1:
 
