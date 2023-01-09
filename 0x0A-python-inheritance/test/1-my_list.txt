@@ -1,0 +1,35 @@
+>>> MyList = __import__('1-my_list').MyList
+>>> type(MyList())
+<class '1-my_list.MyList'>
+
+>>> issubclass(MyList, list)
+True
+
+>>> s = __import__('1-my_list').__doc__
+>>> len(s) > 1
+True
+
+>>> empty = MyList()
+>>> empty.print_sorted()
+[]
+
+>>> 'print_sorted' in dir(MyList)
+True
+
+>>> l = MyList()
+>>> l.append(1)
+>>> l.append(2)
+>>> l.append(3)
+>>> l.append(4)
+>>> print(l)
+[1, 2, 3, 4]
+>>> l.print_sorted()
+[1, 2, 3, 4]
+>>> l.append(99)
+>>> l.append(21)
+>>> l.append(34)
+>>> l.append(-12)
+>>> print(l)
+[1, 2, 3, 4, 99, 21, 34, -12]
+>>> l.print_sorted()
+[-12, 1, 2, 3, 4, 21, 34, 99]
