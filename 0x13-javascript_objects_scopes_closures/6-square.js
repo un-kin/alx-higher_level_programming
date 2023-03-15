@@ -1,16 +1,14 @@
 #!/usr/bin/node
-// JS script to define class that inherits from another class
-const newSquare = require('./5-square');
+const Square1 = require('./5-square.js');
 
-class Square extends newSquare {
+module.exports = class Square extends Square1 {
   charPrint (c) {
-    for (let count = 0; count < this.height; count++) {
-      if (c === undefined) {
-        console.log('X'.repeat(this.width));
-      } else {
-        console.log(c.repeat(this.width));
+    if (c === undefined) {
+      this.print();
+    } else {
+      for (let i = 0; i < this.width; i++) {
+        console.log(c.repeat(this.height));
       }
     }
   }
-}
-module.exports = Square;
+};
