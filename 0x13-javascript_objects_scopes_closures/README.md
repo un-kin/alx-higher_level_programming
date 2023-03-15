@@ -1,0 +1,1 @@
+# Javasvript scope and closure
